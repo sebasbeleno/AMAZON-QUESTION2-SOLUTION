@@ -55,14 +55,29 @@
     position: absolute;
     right: 5px;
     top: 5px;
+    display: none;
 }
 
 .accordion .description {
     text-align: left;
     padding: 5px 10px;
     border-bottom: 1px solid lightgray;
+    display: none;
+}
+
+.accordion.expanded .description {
+    display: block;
+}
+
+.accordion.expanded .expand-icon {
+    display: none;
+}
+
+.accordion.expanded .collapse-icon {
+    display: block;
 }
 
 .position-relative {
     position: relative;
 }
+
